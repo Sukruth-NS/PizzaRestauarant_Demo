@@ -1,8 +1,11 @@
-/* nameme */
 body {
     margin: 0;
     padding: 0;
     width: 100%;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 @media (max-width: 991px) {
@@ -23,7 +26,7 @@ body {
 .navbar-nav {
     margin-right: 0;
     margin-left: auto;
-  }
+}
 
 .hero1>img {
     width: 100%;
@@ -38,8 +41,10 @@ body {
     top: 20%;
     color: white;
     padding: 20px;
-    width: 50%;
+    width: 60%;
+
 }
+
 
 .main-text {
     color: #fff;
@@ -52,7 +57,7 @@ body {
     letter-spacing: 9.09px;
     flex-direction: column;
     flex-shrink: 0;
-    margin-left:10px;
+    margin-left: 10px;
 }
 
 .main-text:after {
@@ -128,9 +133,9 @@ body {
     height: 2px;
     background-color: #F24C4C;
     margin-bottom: 20px;
-  }
+}
 
-    /* margin-top: 5px; */
+/* margin-top: 5px; */
 
 #aboutus_img {
     width: 631px;
@@ -142,6 +147,7 @@ body {
 }
 
 /* menu */
+
 #mid_heading1 {
     display: flex;
     color: #FFF;
@@ -156,44 +162,104 @@ body {
 #mid_heading1:after {
     content: '';
     display: block;
-    margin-left: 750px;
-    width: 400px;
+    margin-left: 800px;
+    width: 300px;
     height: 10px;
     background: #F24C4C;
     margin-top: 5px;
 }
 
-.menu-text {
+.Pizza-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    row-gap: 1rem;
+    column-gap: 0.5rem;
+    padding: 3rem;
+    margin-left: 120px;
+    margin-right: 100px;
+}
+
+.pizza1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.pizza1 p {
+    width: 50%;
+    text-align: center;
+    color: white;
+    padding-left: 10px;
+}
+
+.Pizza-grid .pizza1 p {
+    text-align: left;
+}
+
+b {
+    color: yellow;
+    font-weight: 40px;
+}
+
+.main1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main1 h1 {
+    color: white;
+
+    text-align: center;
+}
+
+.main1 p {
+    color: white;
+    text-align: center;
+}
+
+.maindesc p {
+    padding: 20px;
+}
+
+b {
+    color: yellow;
+    font-weight: 40px;
+}
+
+.menu_text {
     color: #fff;
     font-size: 25px;
     font-family: Ruda;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 100;
     line-height: 40px;
     letter-spacing: 2.25px;
     margin-top: 50px;
     margin-bottom: 50px;
-    margin-left: 120px;
-    margin-right: 120px;
-  }
-  
-  .right-text{
+    margin-left: 180px;
+    margin-right: 250px;
+}
+
+.right-text {
     display: grid;
     align-items: center;
-  }
-  
-  .cards{
+}
+
+.cards {
     display: flex;
     width: 50%;
-  }
-  
-  .cards-container{
+}
+
+.cards_container {
     margin-left: 120px;
     margin-right: 120px;
-  }
+}
 
-  /* carousel */
-  #mid_heading2 {
+/* carousel */
+#mid_heading2 {
     display: flex;
     color: #FFF;
     justify-content: center;
@@ -207,9 +273,85 @@ body {
 #mid_heading2:after {
     content: '';
     display: block;
-    margin-left: 780px;
+    margin-left: 740px;
     width: 350px;
     height: 10px;
     background: #F24C4C;
     margin-top: 5px;
+}
+
+.sl_c {
+    margin-left: 400;
+}
+
+@media (max-width: 768px) {
+    .carousel {
+        width: 320px;
+        height: 180px;
+    }
+
+    .carousel-inner>.item>img {
+        width: 320px;
+        height: 180px;
+    }
+}
+
+/* Gallary */
+#mid_heading4 {
+    display: flex;
+    color: #FFF;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    font-weight: 300;
+    font-size: 50px;
+    font-family: Quattrocento;
+}
+
+#mid_heading4:after {
+    content: '';
+    display: block;
+    margin-left: 790px;
+    width: 350px;
+    height: 10px;
+    background: #F24C4C;
+    margin-top: 5px;
+}
+
+
+#mid_heading3 {
+    display: flex;
+    color: #FFF;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    font-weight: 300;
+    font-size: 50px;
+    font-family: Quattrocento;
+}
+
+#mid_heading3:after {
+    content: '';
+    display: block;
+    margin-left: 470px;
+    width: 350px;
+    height: 10px;
+    background: #F24C4C;
+    margin-top: 5px;
+}
+
+.copywrite {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    flex-direction: row;
+    color: white;
+    margin: 0 auto;
+}
+
+.bottom {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
